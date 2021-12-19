@@ -17,11 +17,8 @@ public class Main
 	    
 	    for(int i = 0; i<arr.length; i++)
 	    {
-	        if(isBetweenZeroAndOne(arr[i]))
-	        {
-	            arr[i] -= min;
-	            arr[i] /= difference;
-	        }
+	       arr[i] -= min;
+	       arr[i] /= difference;
 	    }
 	}
 	
@@ -44,12 +41,4 @@ public class Main
         }
         return max;
     } 
-    
-    public static boolean isBetweenZeroAndOne(double value)
-    {
-        if(value >= 0 && value <=1)
-            return true;
-        else
-        return false;
-    }
 }
